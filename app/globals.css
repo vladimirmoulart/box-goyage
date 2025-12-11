@@ -125,3 +125,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+model-viewer::part(default-progress-bar) {
+  display: none;
+  background: transparent;
+}
