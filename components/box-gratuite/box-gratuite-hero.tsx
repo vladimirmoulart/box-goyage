@@ -2,11 +2,25 @@
 
 /* eslint-disable react/no-unescaped-entities */
 
+import { createElement, type HTMLAttributes, type CSSProperties } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import Script from "next/script"
 import { Gift, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
+
+type ModelViewerProps = HTMLAttributes<HTMLElement> & {
+  src?: string
+  alt?: string
+  autoplay?: boolean
+  "auto-rotate"?: boolean
+  "rotation-per-second"?: string
+  exposure?: string | number
+  "interaction-prompt"?: string
+  style?: CSSProperties
+}
+
+const ModelViewer = (props: ModelViewerProps) => createElement("model-viewer", props)
 
 export function BoxGratuiteHero() {
   const scrollToMission = () => {
@@ -143,7 +157,7 @@ export function BoxGratuiteHero() {
 
       <div className="absolute bottom-6 right-6 sm:right-12 lg:right-24 flex flex-col items-center">
         <div className="rounded-2xl mb-3">
-          <model-viewer
+          <ModelViewer
             src="/gift-box-v2.glb"
             alt="Box Immersion GOYAGE"
             autoplay
