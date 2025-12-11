@@ -92,7 +92,7 @@ export function BoxGratuiteMechanic() {
             ))}
           </div>
 
-          <div className="flex justify-center lg:justify-end">
+          <div className="hidden lg:flex justify-end">
             <Image
               src="/mockup.png"
               alt="Aperçu de l'application GOYAGE"
