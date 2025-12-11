@@ -155,7 +155,7 @@ export function BoxGratuiteHero() {
         </div>
       </div>
 
-      <div className="absolute bottom-6 right-6 sm:right-12 lg:right-24 flex flex-col items-center">
+      <div className="absolute bottom-6 right-6 sm:right-12 lg:right-24 flex-col items-center hidden lg:flex">
         <div className="rounded-2xl mb-3">
           <ModelViewer
             src="/gift-box-v2.glb"

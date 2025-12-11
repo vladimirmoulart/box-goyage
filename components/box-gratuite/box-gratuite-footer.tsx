@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Instagram, Twitter } from "lucide-react"
 
 export function BoxGratuiteFooter() {
@@ -7,8 +8,8 @@ export function BoxGratuiteFooter() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-6">
-            <Link href="/" className="text-2xl font-bold text-coral">
-              GOYAGE
+            <Link href="/" className="flex items-center">
+              <Image src="/logo GOYAGE.png" alt="GOYAGE" width={160} height={50} className="h-12 w-auto" />
             </Link>
             <span className="text-white/40">|</span>
             <p className="text-white/60 text-sm">Voyagez autrement, vivez vraiment</p>
